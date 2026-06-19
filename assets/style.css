@@ -323,6 +323,51 @@ ul.highlights li::before {
   font-weight: 600;
 }
 
+.cad-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.cad-tab {
+  background: transparent;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  font-weight: 500;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.cad-tab:hover {
+  color: var(--text);
+}
+
+.cad-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+.cad-panel {
+  display: none;
+}
+
+.cad-panel.active {
+  display: block;
+}
+
+.cad-panel .panel-lede {
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0 0 32px;
+}
+
 footer.site {
   border-top: 1px solid var(--border);
   padding: 32px 0;

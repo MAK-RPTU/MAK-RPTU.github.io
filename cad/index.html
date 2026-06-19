@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAD &amp; Mechanical Design — Khan, Meeran Ali</title>
+  <meta name="description" content="Selected CAD work: 3D models and renderings, and 2D engineering drawings with GD&T for mechanical parts.">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../">Back to home</a>
+      <div class="project-header">
+        <h1>CAD &amp; Mechanical Design</h1>
+        <p class="lede">
+          Selected mechanical-design work — 3D models and assembly renderings,
+          along with production-ready 2D drawings with GD&amp;T. Tools:
+          SolidWorks, with FEA validation for load-bearing components.
+        </p>
+        <div class="tags">
+          <span class="tag">SolidWorks</span>
+          <span class="tag">GD&amp;T</span>
+          <span class="tag">FEA</span>
+          <span class="tag">DFA / DFM</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="cad-tabs" role="tablist">
+        <button class="cad-tab active" data-tab="3d" role="tab" aria-selected="true">3D Designs</button>
+        <button class="cad-tab" data-tab="2d" role="tab" aria-selected="false">2D Drawings</button>
+      </div>
+
+      <section class="cad-panel active" data-panel="3d" role="tabpanel">
+        <p class="panel-lede">
+          3D assemblies, parts, and renderings. Drop image files (PNG / JPG)
+          into <code>cad/3d/</code> and add <code>&lt;img&gt;</code> tags below.
+        </p>
+        <div class="image-grid">
+          <!--
+            Add 3D renders / screenshots here, e.g.:
+            <img src="3d/assembly_v1.png" alt="Collaborative manipulator assembly, isometric view">
+          -->
+          <div class="empty-state">
+            No 3D designs uploaded yet. Drop renderings into
+            <code>cad/3d/</code> and add <code>&lt;img&gt;</code> tags above.
+          </div>
+        </div>
+      </section>
+
+      <section class="cad-panel" data-panel="2d" role="tabpanel">
+        <p class="panel-lede">
+          2D engineering drawings for mechanical parts — produced in SolidWorks
+          with full GD&amp;T. Drop image files (PNG / JPG) or linked PDFs into
+          <code>cad/2d/</code>.
+        </p>
+        <div class="image-grid">
+          <!--
+            Add 2D drawing previews here, e.g.:
+            <a href="2d/bracket_drawing.pdf">
+              <img src="2d/bracket_drawing.png" alt="Bracket — 2D engineering drawing with GD&T">
+            </a>
+          -->
+          <div class="empty-state">
+            No 2D drawings uploaded yet. Drop drawing exports into
+            <code>cad/2d/</code> and add <code>&lt;img&gt;</code> tags above.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('.cad-tab').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = btn.dataset.tab;
+        document.querySelectorAll('.cad-tab').forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.cad-panel').forEach(function (p) {
+          p.classList.remove('active');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        document.querySelector('.cad-panel[data-panel="' + target + '"]').classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
