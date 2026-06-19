@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Deere — Khan, Meeran Ali</title>
+  <meta name="description" content="Field trials and integration work on John Deere agricultural platforms.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>John Deere</h1>
+        <p class="lede">
+          Replace this paragraph with a short description of the project: the
+          platform, what was being tested, who you collaborated with, and the
+          time window.
+        </p>
+        <div class="tags">
+          <span class="tag">Agriculture</span>
+          <span class="tag">Field trials</span>
+          <!-- add more tags as needed -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <!--
+          To add a video:
+          1. Drop the .mp4 file into ./videos/
+          2. Duplicate the <article> block below and update the src + caption.
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="caption">
+            <h4>Clip title</h4>
+            <p>One-line description · date</p>
+          </div>
+        </article>
+        -->
+
+        <div class="empty-state">
+          No recordings yet. Drop <code>.mp4</code> files into
+          <code>projects/john-deere/videos/</code> and uncomment a card above.
+        </div>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <!--
+          To add a photo: drop it into ./images/ and add an <img> below.
+          <img src="images/photo1.jpg" alt="Short description">
+        -->
+        <div class="empty-state">
+          No photos yet. Drop image files into
+          <code>projects/john-deere/images/</code> and add <code>&lt;img&gt;</code> tags above.
+        </div>
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
