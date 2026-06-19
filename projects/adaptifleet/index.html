@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdaptiFleet — Khan, Meeran Ali</title>
+  <meta name="description" content="Multi-robot fleet in Isaac Sim with autonomous task assignment, a Gemini Flash VLM safety layer, and an LLM-driven natural-language dispatcher.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>AdaptiFleet · Multi-Robot Fleet Coordination</h1>
+        <p class="lede">
+          Multi-robot system built in NVIDIA Isaac Sim with autonomous task
+          assignment, path planning, and docking — extended with a Gemini Flash
+          VLM safety layer for real-time conflict detection and an LLM planner
+          that dispatches robots from natural language.
+        </p>
+        <div class="tags">
+          <span class="tag">Multi-robot</span>
+          <span class="tag">Isaac Sim</span>
+          <span class="tag">VLM</span>
+          <span class="tag">LLM</span>
+          <span class="tag">Path planning</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Autonomous task assignment, path planning, and docking across a coordinated fleet — direct work on intelligent path planning for mobile platforms.</li>
+        <li>Gemini Flash VLM deployed as a real-time safety layer for collision and conflict detection — vision-language grounding over a multi-agent scene.</li>
+        <li>LLM planner that dispatches robots via natural language — early prototype of language-to-action behaviour for mobile platforms.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/adaptifleet.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>AdaptiFleet — coordinated fleet demo</h4>
+            <p>Fleet executing assignments with VLM safety oversight and LLM dispatch.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/1.png" alt="AdaptiFleet scene 1">
+        <img src="images/2.png" alt="AdaptiFleet scene 2">
+        <img src="images/3.png" alt="AdaptiFleet scene 3">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

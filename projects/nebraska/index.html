@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiago &amp; Tiago Pro — Khan, Meeran Ali</title>
+  <meta name="description" content="Object classification, 6D pose estimation, and LLM-grounded manipulation on Tiago and Tiago Pro platforms.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>Nebraska · Tiago &amp; Tiago Pro — LLM-Grounded Manipulation</h1>
+        <p class="lede">
+          Object classification and 6D pose estimation for cluttered-scene
+          manipulation on Tiago and Tiago Pro, with GPT-3.5 Turbo and LLaMA
+          integrated as foundation-model interfaces for natural-language
+          grasping behaviour.
+        </p>
+        <div class="tags">
+          <span class="tag">Tiago</span>
+          <span class="tag">6D pose</span>
+          <span class="tag">YOLOv8 / v11</span>
+          <span class="tag">PoseCNN</span>
+          <span class="tag">GPT-3.5</span>
+          <span class="tag">LLaMA</span>
+          <span class="tag">ROS 2</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Implemented object classification and 6D pose estimation (YOLOv8 / v11, PoseCNN) for manipulation in cluttered scenes on Tiago and Tiago Pro; built an evaluation pipeline comparing simulated and real-camera inputs.</li>
+        <li>Integrated GPT-3.5 Turbo and LLaMA on a Tiago for natural-language manipulation — wrapped third-party model APIs in a structured ROS 2 interface, enabling swappable foundation-model comparison for grasping.</li>
+        <li>Set up Isaac Sim environments for Tiago and Tiago Pro and built ROS 2 service / client interfaces for object attach / detach across simulated and real pick-and-place.</li>
+        <li>Taught the fundamentals of NVIDIA Isaac Sim to a professor through structured presentations and hands-on simulation sessions.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/tiagopro.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Tiago Pro — manipulation</h4>
+            <p>Pick-and-place behaviour combining perception and LLM-grounded planning.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/tiagopro.png" alt="Tiago Pro platform configuration">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

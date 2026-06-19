@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>John Deere — Khan, Meeran Ali</title>
-  <meta name="description" content="Field trials and integration work on John Deere agricultural platforms.">
+  <meta name="description" content="Commissioning a full autonomous stack on a John Deere tractor with GPS/IMU sensor fusion and ROS 2 Docker deployment.">
   <link rel="stylesheet" href="../../assets/style.css">
 </head>
 <body>
@@ -12,21 +12,30 @@
     <header class="site">
       <a class="back-link" href="../../">Back to projects</a>
       <div class="project-header">
-        <h1>John Deere</h1>
+        <h1>John Deere — Autonomous Tractor</h1>
         <p class="lede">
-          Replace this paragraph with a short description of the project: the
-          platform, what was being tested, who you collaborated with, and the
-          time window.
+          Commissioning a full autonomous stack on a John Deere tractor —
+          whole-vehicle motion control and environmental perception under real
+          outdoor field conditions, with a focus on precision weed cutting.
         </p>
         <div class="tags">
-          <span class="tag">Agriculture</span>
-          <span class="tag">Field trials</span>
-          <!-- add more tags as needed -->
+          <span class="tag">Field robotics</span>
+          <span class="tag">Autonomy</span>
+          <span class="tag">Sensor fusion</span>
+          <span class="tag">ROS 2</span>
+          <span class="tag">Docker</span>
         </div>
       </div>
     </header>
 
     <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Full autonomous stack with whole-vehicle motion control and environmental perception in real field conditions.</li>
+        <li>GPS / IMU sensor-fusion pipeline reaching &lt; 3 cm position error under fixed RTK and ~12 cm under degraded RTK — characterized failure modes across the signal-quality envelope.</li>
+        <li>ROS 2 Docker stack with continuous telemetry and off-site diagnostics for resilient headless operation.</li>
+      </ul>
+
       <h2 class="section-title">Recordings</h2>
       <div class="video-grid">
         <article class="video-card">
@@ -36,7 +45,7 @@
           </video>
           <div class="caption">
             <h4>Field test — first run</h4>
-            <p>Initial John Deere field trial.</p>
+            <p>Initial outdoor trial of the autonomous tractor stack.</p>
           </div>
         </article>
 
@@ -47,14 +56,14 @@
           </video>
           <div class="caption">
             <h4>Field test · 15 June 2026</h4>
-            <p>Follow-up field trial recording.</p>
+            <p>Follow-up field trial under varying RTK conditions.</p>
           </div>
         </article>
       </div>
 
       <h2 class="section-title">Photos</h2>
       <div class="image-grid">
-        <img src="images/JohnDeere-5105ML.jpg" alt="John Deere 5105ML tractor used in field trials">
+        <img src="images/JohnDeere-5105ML.jpg" alt="John Deere 5105ML tractor used in the field trials">
       </div>
     </main>
 

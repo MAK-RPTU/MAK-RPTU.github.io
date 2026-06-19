@@ -248,6 +248,81 @@ h2.section-title {
   font-size: 0.95rem;
 }
 
+section.education {
+  margin-bottom: 56px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.education-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+
+.education-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+}
+
+.education-card .degree {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 8px;
+}
+
+.education-card .coursework {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.project-group {
+  margin-bottom: 48px;
+}
+
+.group-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 16px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+ul.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 48px;
+  max-width: 760px;
+}
+
+ul.highlights li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+ul.highlights li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
 footer.site {
   border-top: 1px solid var(--border);
   padding: 32px 0;

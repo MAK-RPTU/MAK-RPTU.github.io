@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vial Defect Detection — Khan, Meeran Ali</title>
+  <meta name="description" content="High-fidelity simulated pharmaceutical vials with glass and sand particle defects for robust defect-detection model training.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>Vial Defect Detection · Synthetic Data</h1>
+        <p class="lede">
+          Designed high-fidelity simulated pharmaceutical vials with realistic
+          defects — glass particles, sand particles — to generate synthetic
+          training data that improves model robustness for defect detection
+          during the QC process.
+        </p>
+        <div class="tags">
+          <span class="tag">Synthetic data</span>
+          <span class="tag">Defect detection</span>
+          <span class="tag">Pharma QC</span>
+          <span class="tag">Isaac Sim</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/vials.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Simulated vials — overview</h4>
+            <p>Material and lighting fidelity in the simulated vial scenes.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/vial_glass_particle.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Glass-particle defect</h4>
+            <p>Synthetic vial with embedded glass-particle contamination.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/vial_black_particle.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Sand / black-particle defect</h4>
+            <p>Synthetic vial with sand / black-particle contamination.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/vials.jpg" alt="Rendered vials used for the synthetic dataset">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

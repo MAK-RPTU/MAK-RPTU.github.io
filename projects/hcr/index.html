@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HCR · Collaborative Manipulator — Khan, Meeran Ali</title>
+  <meta name="description" content="Mechanical design and safety logic for a 1.5 kg-payload collaborative manipulator with 0.12 mm repeatability.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>HCR · Collaborative Manipulator</h1>
+        <p class="lede">
+          Mechanical design, FEA validation, and safety logic for a 1.5 kg
+          payload collaborative manipulator with 0.12 mm repeatability —
+          deployed in an industrial setting to remove a high-risk manual task.
+        </p>
+        <div class="tags">
+          <span class="tag">Mechanical design</span>
+          <span class="tag">FEA</span>
+          <span class="tag">Safety logic</span>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Structured Text</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Designed a collaborative manipulator and applied FEA for validation — 1.5 kg payload, 0.12 mm repeatability.</li>
+        <li>Developed encoder-redundancy safety logic monitoring position, signal presence, and range violations in Structured Text (ST).</li>
+        <li>Improved Design-for-Assembly by minimising part count and reorientation; produced 2D CAD drawings in SolidWorks with full GD&amp;T.</li>
+        <li>Designed and implemented a cost-effective brake mechanism for high-torque sensory actuator units.</li>
+        <li>Replaced manual work in a denim-bleaching zone with the manipulator — eliminated ~95% of respiratory-disorder risk to workers while increasing production throughput.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/HCR19062026.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>HCR manipulator — operation</h4>
+            <p>Collaborative manipulator running its production duty cycle.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MIT · LiDAR Segmentation — Khan, Meeran Ali</title>
+  <meta name="description" content="Building-scale point-cloud generation with simulated LiDAR in Isaac Sim and room- and floor-level semantic segmentation validated in ROS / RViz.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>MIT · LiDAR-Based Semantic Segmentation</h1>
+        <p class="lede">
+          Generated building-scale point-cloud data with simulated LiDAR in
+          NVIDIA Isaac Sim and performed room- and floor-level semantic
+          segmentation; validated end-to-end in ROS / RViz with reproducible
+          single-command pipelines.
+        </p>
+        <div class="tags">
+          <span class="tag">LiDAR</span>
+          <span class="tag">Isaac Sim</span>
+          <span class="tag">Point clouds</span>
+          <span class="tag">Semantic segmentation</span>
+          <span class="tag">ROS</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Generated building-scale point-cloud data using simulated LiDAR in NVIDIA Isaac Sim — replicating real-world sensing conditions for downstream segmentation.</li>
+        <li>Performed room- and floor-level semantic segmentation of point clouds for spatial understanding; validated results in ROS / RViz.</li>
+        <li>Automated odometry and point-cloud dataset generation through a single-command pipeline for reproducible experimentation.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/Lidar_based_2D_plan_gen_.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>LiDAR-based 2D plan generation</h4>
+            <p>Simulated LiDAR sweep producing building-floor layouts.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/Pipeline.png" alt="LiDAR processing and segmentation pipeline overview">
+        <img src="images/Complete_workflow.png" alt="Complete dataset-generation workflow">
+        <img src="images/S_graph.gif" alt="Animated S-graph result from the segmentation pipeline">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

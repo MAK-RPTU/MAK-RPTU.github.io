@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UR10e Digital Twin — Khan, Meeran Ali</title>
+  <meta name="description" content="UR10e ↔ Isaac Sim digital-twin interface with ROS 2 Action Graphs and MoveIt, validated on a spot-welding trajectory.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>UR10e Digital Twin · Spot Welding</h1>
+        <p class="lede">
+          Built an interface that synchronises a real UR10e robot with NVIDIA
+          Isaac Sim and the ROS 2 ecosystem via Action Graphs and MoveIt — and
+          validated the round-trip on a spot-welding trajectory.
+        </p>
+        <div class="tags">
+          <span class="tag">UR10e</span>
+          <span class="tag">Isaac Sim</span>
+          <span class="tag">ROS 2</span>
+          <span class="tag">MoveIt</span>
+          <span class="tag">Action Graph</span>
+          <span class="tag">Digital twin</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/Digital_twin_UR10e.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Real UR10e — spot-welding trajectory</h4>
+            <p>Physical robot executing the trajectory mirrored from Isaac Sim.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/Digital_twin_IsaacSim.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Isaac Sim — synchronised twin</h4>
+            <p>Simulation side of the twin reflecting the real robot's state in real time.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/1.png" alt="UR10e digital-twin architecture diagram">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

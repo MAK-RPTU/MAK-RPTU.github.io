@@ -8,3 +8,6 @@ Thumbs.db
 * copy.*
 *-copy.*
 *copy.mp4
+
+# Oversized video files (GitHub's 100 MB per-file hard limit)
+projects/objectsorting/videos/project01.mp4

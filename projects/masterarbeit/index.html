@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Master's Thesis · Synthetic Data — Khan, Meeran Ali</title>
+  <meta name="description" content="Synthetic-data pipelines in NVIDIA Isaac Sim and a PyTorch pose-estimation model trained entirely on synthetic data — 81% bin-picking accuracy on real cameras with no real-data fine-tuning.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>Master's Thesis · Synthetic Data for Pose Estimation</h1>
+        <p class="lede">
+          Built end-to-end synthetic-data pipelines in NVIDIA Omniverse Isaac
+          Sim and trained a PyTorch pose-estimation model entirely on synthetic
+          data — reaching 81% accuracy on real-camera bin picking with no
+          real-data fine-tuning.
+        </p>
+        <div class="tags">
+          <span class="tag">Isaac Sim</span>
+          <span class="tag">USD</span>
+          <span class="tag">Synthetic data</span>
+          <span class="tag">6D pose</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Omniverse extension</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Built high-fidelity simulation pipelines using USD (Universal Scene Description) and Isaac CORE APIs inside NVIDIA Omniverse Isaac Sim.</li>
+        <li>Used Replicator APIs for randomized lighting, materials, and pose variations — annotated synthetic data at ~0.01 s/frame.</li>
+        <li>Trained a PyTorch pose-estimation model entirely on synthetic data; reached 81% accuracy on real-camera bin picking without real-data fine-tuning.</li>
+        <li>Authored an Omniverse extension to standardize annotated-dataset generation across ML model formats.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/SDG_extension_video.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Synthetic-data-generation extension</h4>
+            <p>Omniverse extension walkthrough: randomised scenes and annotated outputs.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/Picture1.png" alt="Synthetic scene generated in Isaac Sim">
+        <img src="images/Picture2.png" alt="Synthetic data variation example">
+        <img src="images/QualitativeAnalysis.png" alt="Qualitative pose-estimation results on real images">
+        <img src="images/Quantitativeanalysis.png" alt="Quantitative accuracy and error analysis">
+        <img src="images/Timeutilization.png" alt="Time utilisation of the synthetic-data generation pipeline">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

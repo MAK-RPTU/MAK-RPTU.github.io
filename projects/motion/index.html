@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unitree G1 Humanoid — Khan, Meeran Ali</title>
+  <meta name="description" content="End-to-end commissioning of a Unitree G1 humanoid with sim-to-real locomotion, ROS 2 / MuJoCo / IsaacLab integration, and text-to-3D scene generation.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>Motion · Unitree G1 Humanoid Commissioning</h1>
+        <p class="lede">
+          End-to-end commissioning of a Unitree G1 humanoid in Brussels:
+          hardware assembly, ROS 2 software integration (MuJoCo, IsaacLab),
+          sim-to-real locomotion (Kimodo, cap-x), and a text-to-3D pipeline for
+          rapid simulation-scene prototyping.
+        </p>
+        <div class="tags">
+          <span class="tag">Humanoid</span>
+          <span class="tag">Unitree G1</span>
+          <span class="tag">Sim-to-real</span>
+          <span class="tag">MuJoCo</span>
+          <span class="tag">IsaacLab</span>
+          <span class="tag">ROS 2</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Deployed the Kimodo locomotion policy and cap-x on a physical Unitree G1 — closed the sim-to-real gap iteratively through physics-parameter tuning and on-robot validation under real contact and dynamics.</li>
+        <li>Commissioned the G1 end-to-end: hardware assembly, ROS 2 software integration (MuJoCo, IsaacLab), and full system validation; documented every hardware / software interface.</li>
+        <li>Built a text-to-3D pipeline using Gaussian splats for rapid simulation-environment prototyping — natural-language-grounded scene generation for humanoid testing.</li>
+        <li>Implemented human–robot safety protocols for reliable close-proximity operation; contributed to a real-time teleoperation dashboard for supervisory control.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/kimodo_salsa.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Kimodo locomotion — dynamic motion</h4>
+            <p>On-robot validation of the Kimodo policy after sim-to-real tuning.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/GROOTN1.7-realDelster.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>GR00T N1.7 — real deployment</h4>
+            <p>Foundation-model-driven behaviour running on real hardware.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/capx_pick_place.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>cap-x · pick-and-place</h4>
+            <p>Whole-body manipulation behaviour deployed on the G1.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/cap_x_pick_place_items_mujoco.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>cap-x · MuJoCo</h4>
+            <p>Pick-and-place rollouts in simulation prior to real deployment.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/LLM_Spanwer_isaaac_FF_updated.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>LLM-driven scene spawner</h4>
+            <p>Natural-language scene generation inside Isaac Sim for humanoid testing.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/First_onsite.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>First on-site day</h4>
+            <p>Hardware assembly and initial bring-up in Brussels.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/factory.png" alt="Motion factory / lab environment">
+        <img src="images/motioncopilotlogo.png" alt="Motion Copilot logo">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

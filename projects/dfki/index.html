@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DFKI · Dimofac — Khan, Meeran Ali</title>
+  <meta name="description" content="Digital twin of 6 production sub-modules with UR5e manipulator and hardware-in-the-loop validation in ROS 2.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>DFKI · Dimofac — UR5e Digital Twin</h1>
+        <p class="lede">
+          Digital twin of six production sub-modules with a UR5e manipulator in
+          ROS 2, with hardware-in-the-loop validation across mechanical,
+          gripper, and safety-sensor states. Reconfigures itself at runtime as
+          modules are physically repositioned.
+        </p>
+        <div class="tags">
+          <span class="tag">ROS 2</span>
+          <span class="tag">UR5e</span>
+          <span class="tag">Digital twin</span>
+          <span class="tag">HIL</span>
+          <span class="tag">Robotiq</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Set up a digital twin of six production sub-modules with a UR5e in ROS 2 and ran HIL validation covering mechanical, gripper-action, and safety-sensor states.</li>
+        <li>Built a runtime-reconfigurable URDF parser in ROS 2 — the robot adapts automatically to module repositioning without recompilation.</li>
+        <li>Developed C++ / Python ROS 2 components (action server, Lifecycle node) for Robotiq gripper control with explicit state machines for activation, fault, and recovery.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/Dimofac_13_09_24.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Dimofac — module reconfiguration demo</h4>
+            <p>UR5e operating across reconfigured production sub-modules.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/Image%20%281%29.jpg" alt="Dimofac production cell with UR5e">
+        <img src="images/Picture1.png" alt="DFKI Dimofac module layout">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

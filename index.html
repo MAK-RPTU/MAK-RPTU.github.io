@@ -3,48 +3,154 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Khan,MeeranAli — Research & Field Robotics Portfolio</title>
-  <meta name="description" content="Selected video recordings from field robotics, GNSS and sensor integration projects.">
+  <title>Khan, Meeran Ali — Robotics Engineer & Researcher</title>
+  <meta name="description" content="Selected projects in field robotics, humanoid commissioning, manipulation, and synthetic data for robotic perception.">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="container">
     <header class="site">
       <h1>Khan, Meeran Ali</h1>
-      <p class="subtitle">PhD researcher · Field robotics, GNSS, sensor integration</p>
+      <p class="subtitle">Robotics engineer · Field autonomy · Humanoid &amp; manipulator commissioning · Sim-to-real</p>
       <p class="meta">
         <a href="mailto:meeranali-khan@hotmail.com">meeranali-khan@hotmail.com</a>
-        <!-- Add LinkedIn / Google Scholar / GitHub links here -->
+        <a href="https://github.com/MAK-RPTU">GitHub</a>
+        <!-- Add LinkedIn / Google Scholar links here -->
       </p>
     </header>
 
     <main>
       <section class="intro">
+        <h2 class="section-title">Profile</h2>
         <p>
-          A small collection of recordings from field tests and lab setups across
-          ongoing projects. Each section links to short clips and photos that
-          show the platform, sensor stack and behaviour in the field.
+          Robotics engineer (M.Sc. Automation &amp; Control, RPTU Kaiserslautern;
+          B.Sc. Mechatronics, UET Lahore). Currently a Wissenschaftlicher
+          Mitarbeiter at RPTU deploying an autonomous John Deere tractor for
+          precision weed cutting, and commissioning a Unitree G1 humanoid in
+          Brussels.
+        </p>
+        <p>
+          Background spans humanoid locomotion and sim-to-real, manipulation on
+          UR5e / Tiago platforms (MoveIt, Robotiq, 6D pose estimation),
+          agricultural field robotics with multi-sensor fusion under degraded
+          conditions, and LLM / VLM-grounded robot behaviour (GPT-3.5 Turbo,
+          LLaMA, Gemini Flash). Looking to extend hands-on work into formal
+          research on mobile manipulation for humanoids — integrating whole-body
+          control, perception, and foundation-model-driven planning on real
+          hardware.
         </p>
       </section>
 
-      <h2 class="section-title">Projects</h2>
-      <div class="project-grid">
-        <a class="project-card" href="projects/john-deere/">
-          <h3>John Deere</h3>
-          <p>Field trials and integration work on John Deere agricultural platforms.</p>
-          <span class="arrow">View recordings →</span>
-        </a>
+      <section class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <article class="education-card">
+            <h3>Rheinland-Pfälzische Technische Universität (RPTU) Kaiserslautern, Germany</h3>
+            <p class="degree">M.Sc. Electrical Engineering &amp; IT — Automation &amp; Control · 05.2022 – 06.2024</p>
+            <p class="coursework">
+              Relevant coursework: Robotics, Cooperative Robot Control, Sensor
+              Signal Processing, Machine Vision, Machine Learning in Control
+              Engineering, Modeling &amp; Identification, Non-Linear &amp; Adaptive
+              Control, Intelligent Systems, Robust Control.
+            </p>
+          </article>
+          <article class="education-card">
+            <h3>University of Engineering &amp; Technology (UET) Lahore, Pakistan</h3>
+            <p class="degree">B.Sc. Mechatronics &amp; Control Engineering · 09.2016 – 05.2020</p>
+          </article>
+        </div>
+      </section>
 
-        <a class="project-card" href="projects/agilex-scout-mini/">
-          <h3>Agilex Scout Mini</h3>
-          <p>GNSS, sensor and autonomy experiments on the Scout Mini UGV.</p>
-          <span class="arrow">View recordings →</span>
-        </a>
-      </div>
+      <section>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-group">
+          <p class="group-label">Field robotics &amp; autonomy</p>
+          <div class="project-grid">
+            <a class="project-card" href="projects/john-deere/">
+              <h3>John Deere</h3>
+              <p>Autonomous tractor stack · GPS/IMU fusion · ROS 2 + Docker.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/agilex-scout-mini/">
+              <h3>Agilex Scout Mini</h3>
+              <p>GNSS / IMU fusion · &lt;5 cm error under degraded RTK.</p>
+              <span class="arrow">View →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-group">
+          <p class="group-label">Humanoids &amp; manipulators</p>
+          <div class="project-grid">
+            <a class="project-card" href="projects/motion/">
+              <h3>Unitree G1 Humanoid</h3>
+              <p>End-to-end commissioning · sim-to-real locomotion · text-to-3D scenes.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/nebraska/">
+              <h3>Tiago &amp; Tiago Pro</h3>
+              <p>6D pose estimation · LLM-grounded manipulation in cluttered scenes.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/dfki/">
+              <h3>DFKI · Dimofac</h3>
+              <p>UR5e digital twin · runtime-reconfigurable URDF · HIL validation.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/ur10e-digitaltwin-spotwelding/">
+              <h3>UR10e Digital Twin</h3>
+              <p>Spot-welding trajectory · Isaac Sim ↔ ROS 2 sync via MoveIt.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/lifecyclenode/">
+              <h3>ROS 2 Lifecycle Node</h3>
+              <p>Robotiq gripper control on UR5e · C++ / Python action server.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/hcr/">
+              <h3>HCR · Collaborative Manipulator</h3>
+              <p>1.5 kg payload · 0.12 mm repeatability · FEA-validated mechanical design.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/objectsorting/">
+              <h3>MPC-Based Object Sorting</h3>
+              <p>Mobile robot · online optimization over colour, distance, and weighting.</p>
+              <span class="arrow">View →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-group">
+          <p class="group-label">Simulation &amp; synthetic data</p>
+          <div class="project-grid">
+            <a class="project-card" href="projects/masterarbeit/">
+              <h3>Master's Thesis · Synthetic Data</h3>
+              <p>Isaac Sim pipelines · 81% bin-picking accuracy with zero real-data fine-tuning.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/vials/">
+              <h3>Vial Defect Detection</h3>
+              <p>Synthetic pharmaceutical vials with glass / sand defects for QC models.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/mit/">
+              <h3>MIT · LiDAR Segmentation</h3>
+              <p>Building-scale point clouds · room- and floor-level semantic segmentation.</p>
+              <span class="arrow">View →</span>
+            </a>
+            <a class="project-card" href="projects/adaptifleet/">
+              <h3>AdaptiFleet</h3>
+              <p>Multi-robot fleet in Isaac Sim · Gemini Flash VLM safety layer · LLM dispatcher.</p>
+              <span class="arrow">View →</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site">
-      © <span id="year"></span> Ali · Built with GitHub Pages
+      © <span id="year"></span> Khan, Meeran Ali
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
