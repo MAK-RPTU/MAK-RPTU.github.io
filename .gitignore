@@ -3,3 +3,8 @@ Thumbs.db
 *.tmp
 .vscode/
 .idea/
+
+# Accidental Windows file duplicates
+* copy.*
+*-copy.*
+*copy.mp4
