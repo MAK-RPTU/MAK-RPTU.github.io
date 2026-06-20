@@ -35,38 +35,106 @@
 
       <section class="cad-panel active" data-panel="3d" role="tabpanel">
         <p class="panel-lede">
-          3D assemblies, parts, and renderings. Drop image files (PNG / JPG)
-          into <code>cad/3d/</code> and add <code>&lt;img&gt;</code> tags below.
+          3D models, assemblies, and renderings produced in SolidWorks across
+          several projects — from collaborative manipulators to electronic
+          enclosures and field-robotics hardware.
         </p>
-        <div class="image-grid">
-          <!--
-            Add 3D renders / screenshots here, e.g.:
-            <img src="3d/assembly_v1.png" alt="Collaborative manipulator assembly, isometric view">
-          -->
-          <div class="empty-state">
-            No 3D designs uploaded yet. Drop renderings into
-            <code>cad/3d/</code> and add <code>&lt;img&gt;</code> tags above.
+
+        <div class="cad-subgroup">
+          <h3 class="cad-subgroup-title">Collaborative Manipulator (HCR)</h3>
+          <div class="image-grid">
+            <img src="3d/5DOF_Cobot.JPG" alt="5-DOF collaborative manipulator — render">
+            <img src="3d/7DOF_Cobot.JPG" alt="7-DOF collaborative manipulator — render">
+            <img src="3d/cobot1.JPG" alt="Collaborative manipulator — assembly view 1">
+            <img src="3d/cobot2.JPG" alt="Collaborative manipulator — assembly view 2">
+            <img src="3d/cobot_crosssection.JPG" alt="Collaborative manipulator — internal cross-section">
+            <img src="3d/motor_housing.jpg" alt="Motor housing — assembly detail">
+            <img src="3d/joint_parts.jpg" alt="Joint internals — exploded view">
+            <img src="3d/joint_parts1.jpg" alt="Joint internals — alternate view">
+            <img src="3d/shaft1.jpeg" alt="Output shaft — render 1">
+            <img src="3d/shaft2.jpeg" alt="Output shaft — render 2">
+            <img src="3d/BatteryEnclosure.JPG" alt="Battery enclosure — render">
+            <img src="3d/slip%20ring%201.JPG" alt="Slip-ring assembly — view 1">
+            <img src="3d/slip%20ring%202.JPG" alt="Slip-ring assembly — view 2">
+          </div>
+        </div>
+
+        <div class="cad-subgroup">
+          <h3 class="cad-subgroup-title">Agilex Scout Mini — Chassis &amp; Sensor Stack</h3>
+          <div class="video-grid">
+            <article class="video-card">
+              <video controls preload="metadata" playsinline>
+                <source src="3d/GNSS_IMU_STACK.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="caption">
+                <h4>GNSS / IMU sensor stack — assembly walkthrough</h4>
+                <p>Animated assembly of the GNSS / IMU mount on the Scout Mini.</p>
+              </div>
+            </article>
+          </div>
+          <div class="image-grid">
+            <img src="3d/Agilex_ground.jpg" alt="Agilex Scout Mini chassis — ground configuration">
+            <img src="3d/Agilex_sand.jpg" alt="Agilex Scout Mini chassis — sand-terrain configuration">
+            <img src="3d/Agilex_track.jpg" alt="Agilex Scout Mini chassis — tracked configuration">
+          </div>
+        </div>
+
+        <div class="cad-subgroup">
+          <h3 class="cad-subgroup-title">Access Management System (AMS)</h3>
+          <div class="image-grid">
+            <img src="3d/AMS_1.JPG" alt="Access Management System enclosure — render 1">
+            <img src="3d/AMS2.JPG" alt="Access Management System enclosure — render 2">
+            <img src="3d/AMS2a.jpeg" alt="Access Management System enclosure — alternate view">
+            <img src="3d/AMS3.JPG" alt="Access Management System enclosure — render 3">
+            <img src="3d/AMSa.jpg" alt="Access Management System enclosure — render a">
+            <img src="3d/AMSb.jpeg" alt="Access Management System enclosure — render b">
+            <img src="3d/AMS_RFID_Fingerprint_Devices_Enclosures.jpeg" alt="AMS RFID and fingerprint device enclosures — overview">
+            <img src="3d/FingerprintAMS.JPG" alt="Fingerprint AMS enclosure — render 1">
+            <img src="3d/FingerprintAMS2.JPG" alt="Fingerprint AMS enclosure — render 2">
+            <img src="3d/FingerprintAMS3.jpeg" alt="Fingerprint AMS enclosure — render 3">
+          </div>
+        </div>
+
+        <div class="cad-subgroup">
+          <h3 class="cad-subgroup-title">RFID Devices</h3>
+          <div class="image-grid">
+            <img src="3d/RFID1.JPG" alt="RFID device enclosure — render 1">
+            <img src="3d/RFID2.JPG" alt="RFID device enclosure — render 2">
+            <img src="3d/RFID3.JPG" alt="RFID device enclosure — render 3">
+            <img src="3d/RFID3a.JPG" alt="RFID device enclosure — render 3a">
+            <img src="3d/RFID_3b.JPG" alt="RFID device enclosure — render 3b">
+          </div>
+        </div>
+
+        <div class="cad-subgroup">
+          <h3 class="cad-subgroup-title">Pulse — Power Monitoring</h3>
+          <div class="image-grid">
+            <img src="3d/PULSE-RENDERED.jpg" alt="Pulse power monitor — final render">
+            <img src="3d/Pulse_3PHASE_MONITOR.JPG" alt="Pulse 3-phase monitor — assembly render">
+            <img src="3d/single%20phase_monitor_%20pulse.JPG" alt="Pulse single-phase monitor — assembly render">
+            <img src="3d/PULSE-3PHASE-measuremnt.png" alt="Pulse 3-phase measurement — overview">
+          </div>
+        </div>
+
+        <div class="cad-subgroup">
+          <h3 class="cad-subgroup-title">Air-Quality Device</h3>
+          <div class="image-grid">
+            <img src="3d/AirQualityDevice1.JPG" alt="Air-quality monitoring device enclosure — render">
           </div>
         </div>
       </section>
 
       <section class="cad-panel" data-panel="2d" role="tabpanel">
         <p class="panel-lede">
-          2D engineering drawings for mechanical parts — produced in SolidWorks
-          with full GD&amp;T. Drop image files (PNG / JPG) or linked PDFs into
-          <code>cad/2d/</code>.
+          2D engineering drawings produced in SolidWorks with full GD&amp;T —
+          production-ready outputs for mechanical components.
         </p>
         <div class="image-grid">
-          <!--
-            Add 2D drawing previews here, e.g.:
-            <a href="2d/bracket_drawing.pdf">
-              <img src="2d/bracket_drawing.png" alt="Bracket — 2D engineering drawing with GD&T">
-            </a>
-          -->
-          <div class="empty-state">
-            No 2D drawings uploaded yet. Drop drawing exports into
-            <code>cad/2d/</code> and add <code>&lt;img&gt;</code> tags above.
-          </div>
+          <img src="2d/Shaft%202D%20drawing.png" alt="Shaft — 2D engineering drawing with GD&T">
+          <img src="2d/Coupling%202D%20drawing.png" alt="Coupling — 2D engineering drawing with GD&T">
+          <img src="2d/front_housing.png" alt="Front housing — 2D engineering drawing">
+          <img src="2d/2Ddrawing1.png" alt="Mechanical part — 2D engineering drawing">
         </div>
       </section>
     </main>

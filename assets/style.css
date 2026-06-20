@@ -368,6 +368,23 @@ ul.highlights li::before {
   margin: 0 0 32px;
 }
 
+.cad-subgroup {
+  margin-bottom: 48px;
+}
+
+.cad-subgroup-title {
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: var(--text);
+}
+
+.cad-subgroup .image-grid,
+.cad-subgroup .video-grid {
+  margin-bottom: 16px;
+}
+
 footer.site {
   border-top: 1px solid var(--border);
   padding: 32px 0;
