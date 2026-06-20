@@ -49,8 +49,35 @@ a:hover {
   padding: 0 24px;
 }
 
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.site-nav a {
+  color: var(--muted);
+  border-bottom: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+  border-bottom: none;
+}
+
+.site-nav a.current {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 header.site {
-  padding: 64px 0 32px;
+  padding: 40px 0 32px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 48px;
 }
