@@ -1,0 +1,96 @@
+<svg viewBox="0 0 1580 380" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#333333"/>
+    </marker>
+    <marker id="arrowDash" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#888888"/>
+    </marker>
+  </defs>
+
+  <!-- ================= MAIN PIPELINE EDGES ================= -->
+  <line x1="133" y1="114" x2="170" y2="114" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="370" y1="114" x2="403" y2="114" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="603" y1="114" x2="636" y2="114" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="836" y1="114" x2="869" y2="114" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1069" y1="114" x2="1102" y2="114" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1302" y1="114" x2="1335" y2="114" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- Ground-truth feed: validation ladder -> registration/metrics -->
+  <path d="M760,250 L760,200 L971,200 L971,166" fill="none" stroke="#888888" stroke-width="1.4"
+        stroke-dasharray="5 4" marker-end="url(#arrowDash)"/>
+  <text x="866" y="192" font-size="12" fill="#777777" text-anchor="middle">ground truth vs. reconstruction</text>
+
+  <!-- ================= MAIN PIPELINE NODES ================= -->
+  <!-- 2D photograph -->
+  <ellipse cx="75" cy="114" rx="58" ry="34" fill="#149e8e"/>
+  <text x="75" y="110" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">2D photo</text>
+  <text x="75" y="126" font-size="10.5" fill="#eafaf7" text-anchor="middle">single image</text>
+
+  <!-- DECA + FLAME -->
+  <rect x="175" y="68" width="195" height="92" rx="6" fill="#141414"/>
+  <text x="272" y="96" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">DECA + FLAME 2020</text>
+  <text x="272" y="118" font-size="11.5" fill="#bdbdbd" text-anchor="middle">coarse + detail mesh ·</text>
+  <text x="272" y="134" font-size="11.5" fill="#bdbdbd" text-anchor="middle">HPC Slurm pipeline</text>
+
+  <!-- Scale calibration -->
+  <rect x="408" y="68" width="195" height="92" rx="6" fill="#141414"/>
+  <text x="505" y="96" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Scale calibration</text>
+  <text x="505" y="118" font-size="11.5" fill="#bdbdbd" text-anchor="middle">FLAME units → mm ·</text>
+  <text x="505" y="134" font-size="11.5" fill="#bdbdbd" text-anchor="middle">interpupillary reference</text>
+
+  <!-- Rigid registration -->
+  <rect x="641" y="68" width="195" height="92" rx="6" fill="#141414"/>
+  <text x="738" y="96" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Rigid registration</text>
+  <text x="738" y="118" font-size="11.5" fill="#bdbdbd" text-anchor="middle">ICP · pose error separated</text>
+  <text x="738" y="134" font-size="11.5" fill="#bdbdbd" text-anchor="middle">from shape error</text>
+
+  <!-- Surface metrics -->
+  <rect x="874" y="68" width="195" height="92" rx="6" fill="#141414"/>
+  <text x="971" y="96" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Surface metrics</text>
+  <text x="971" y="118" font-size="11.5" fill="#bdbdbd" text-anchor="middle">chamfer · HD95 · RMSE ·</text>
+  <text x="971" y="134" font-size="11.5" fill="#bdbdbd" text-anchor="middle">signed bias · float64</text>
+
+  <!-- Per-region report -->
+  <rect x="1107" y="68" width="195" height="92" rx="6" fill="#141414"/>
+  <text x="1204" y="96" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Per-region report</text>
+  <text x="1204" y="118" font-size="11.5" fill="#bdbdbd" text-anchor="middle">nose · periorbital · chin ·</text>
+  <text x="1204" y="134" font-size="11.5" fill="#bdbdbd" text-anchor="middle">cheeks · forehead</text>
+
+  <!-- Surgical error budget -->
+  <rect x="1335" y="68" width="210" height="92" rx="6" fill="#149e8e"/>
+  <text x="1440" y="96" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Surgical error budget</text>
+  <text x="1440" y="118" font-size="11.5" fill="#eafaf7" text-anchor="middle">RMSE ≤ 2 mm · HD95 ≤ 3 mm ·</text>
+  <text x="1440" y="134" font-size="11.5" fill="#eafaf7" text-anchor="middle">|bias| ≤ 0.5 mm</text>
+
+  <!-- ================= VALIDATION LADDER ================= -->
+  <text x="70" y="242" font-size="12" font-weight="bold" fill="#555555">VALIDATION LADDER — GROUND-TRUTH SOURCES</text>
+
+  <line x1="400" y1="300" x2="436" y2="300" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="770" y1="300" x2="806" y2="300" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1140" y1="300" x2="1176" y2="300" stroke="#333333" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- Step 1: self-test (done) -->
+  <rect x="70" y="260" width="330" height="80" rx="6" fill="#149e8e"/>
+  <text x="235" y="288" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">1 · Software self-test — PASS</text>
+  <text x="235" y="310" font-size="11.5" fill="#eafaf7" text-anchor="middle">analytic ground truth: translation + sphere,</text>
+  <text x="235" y="326" font-size="11.5" fill="#eafaf7" text-anchor="middle">exact to machine precision</text>
+
+  <!-- Step 2: phantom -->
+  <rect x="440" y="260" width="330" height="80" rx="6" fill="#141414"/>
+  <text x="605" y="288" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">2 · Phantom study — proposed</text>
+  <text x="605" y="310" font-size="11.5" fill="#bdbdbd" text-anchor="middle">textured 3D-printed head · exact STL ground</text>
+  <text x="605" y="326" font-size="11.5" fill="#bdbdbd" text-anchor="middle">truth · pose / lighting / distance sweeps</text>
+
+  <!-- Step 3: volunteers -->
+  <rect x="810" y="260" width="330" height="80" rx="6" fill="#141414"/>
+  <text x="975" y="288" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">3 · Volunteer study — proposed</text>
+  <text x="975" y="310" font-size="11.5" fill="#bdbdbd" text-anchor="middle">n ≈ 10–20 · metrology-grade scans</text>
+  <text x="975" y="326" font-size="11.5" fill="#bdbdbd" text-anchor="middle">(3dMD / Artec) · per-region error bars</text>
+
+  <!-- Step 4: patients -->
+  <rect x="1180" y="260" width="330" height="80" rx="6" fill="#141414"/>
+  <text x="1345" y="288" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">4 · Patient data — ethics approval</text>
+  <text x="1345" y="310" font-size="11.5" fill="#bdbdbd" text-anchor="middle">clinical scan / CT surface ·</text>
+  <text x="1345" y="326" font-size="11.5" fill="#bdbdbd" text-anchor="middle">accuracy on the target population</text>
+</svg>

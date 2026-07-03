@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Face Reconstruction · DECA + FLAME — Khan, Meeran Ali</title>
+  <meta name="description" content="Single-photograph 3D face reconstruction with DECA and FLAME 2020, feature-preserving detail meshes, and a quantitative validation protocol toward surgical use.">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    .flowchart-row {
+      margin-bottom: 56px;
+    }
+    .flowchart-row img {
+      display: block;
+      width: 100%;
+      max-width: 1040px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>Image-to-3D Face Reconstruction · DECA + FLAME</h1>
+        <p class="lede">
+          Single-photograph 3D face reconstruction with DECA and the FLAME 2020
+          model on the RPTU Elwetritsch HPC — feature-preserving coarse and
+          detail meshes, an exact surface-distance metric suite, and a
+          phantom-to-patient validation ladder toward surgical use.
+        </p>
+        <div class="tags">
+          <span class="tag">DECA</span>
+          <span class="tag">FLAME 2020</span>
+          <span class="tag">3D reconstruction</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">HPC / Slurm</span>
+          <span class="tag">Medical validation</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Reconstructs feature-preserving 3D face meshes (coarse FLAME shape + displacement-based detail) from a single 2D photograph, running as a Slurm pipeline on RPTU's Elwetritsch HPC.</li>
+        <li>Built a float64 surface-distance metric suite — chamfer, Hausdorff, HD95, point-to-surface RMSE / MAE / P95, and signed bias — validated against analytic ground truth (translation and sphere self-tests) to machine precision.</li>
+        <li>Per-region error reporting (nose, cheeks, chin, forehead, periorbital), because a good global average can hide a locally poor region — critical for surgical relevance.</li>
+        <li>Fully deterministic and reproducible: fixed seeds, deterministic CUDA workspace, and per-experiment logging of Slurm job IDs and git commits.</li>
+        <li>Defined a four-step validation ladder: software self-test (done) → textured-phantom study against exact printed-STL ground truth → volunteer study with metrology-grade scans → patient data under ethics approval, with pre-agreed acceptance thresholds (RMSE ≤ 2 mm, HD95 ≤ 3 mm).</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/DECA_FLAME.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="caption">
+            <h4>DECA + FLAME reconstruction</h4>
+            <p>Coarse and detail-mesh reconstruction from a single photograph.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="image-grid">
+        <img src="images/overlay_coarse_origsize.jpg" alt="Coarse FLAME mesh overlaid on the original photograph">
+        <img src="images/overlay_detail_origsize.jpg" alt="Detail mesh overlaid on the original photograph">
+      </div>
+      <div class="flowchart-row">
+        <img src="images/validation_workflow.svg" alt="Validation workflow: photo to DECA/FLAME mesh, scale calibration, ICP registration, surface metrics, per-region report, and the four-step validation ladder">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
