@@ -23,20 +23,6 @@
       border: 1px solid var(--border);
       display: block;
     }
-    .flowchart-row {
-      margin-bottom: 56px;
-    }
-    .flowchart-row img {
-      display: block;
-      width: 100%;
-      max-width: 920px;
-      height: auto;
-      margin: 0 auto;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: var(--surface);
-      padding: 12px;
-    }
     @media (max-width: 600px) {
       .photo-row { grid-template-columns: 1fr; }
     }
@@ -165,12 +151,17 @@
       <div class="flowchart-row">
         <img src="images/pipeline_flowchart.svg" alt="End-to-end commissioning pipeline flowchart">
       </div>
-      <div class="flowchart-row">
-        <img src="images/aim-video2robot-pipeline.png" alt="AIM video-to-robot motion reconstruction pipeline">
+      <div class="pipeline-row">
+        <figure>
+          <img src="images/aim-video2robot-pipeline.png" alt="AIM video-to-robot motion reconstruction pipeline">
+          <figcaption>AIM video-to-robot pipeline · click to enlarge</figcaption>
+        </figure>
+        <figure>
+          <img src="images/grail-recon-pipeline.png" alt="GRAIL motion reconstruction pipeline">
+          <figcaption>GRAIL reconstruction pipeline · click to enlarge</figcaption>
+        </figure>
       </div>
-      <div class="flowchart-row">
-        <img src="images/grail-recon-pipeline.png" alt="GRAIL motion reconstruction pipeline">
-      </div>
+
     </main>
 
     <footer class="site">
@@ -178,5 +169,6 @@
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../../assets/lightbox.js"></script>
 </body>
 </html>
