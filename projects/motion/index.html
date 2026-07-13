@@ -64,56 +64,6 @@
       <div class="video-grid">
         <article class="video-card">
           <video controls preload="metadata" playsinline>
-            <source src="videos/kimodo_salsa.mp4" type="video/mp4">
-          </video>
-          <div class="caption">
-            <h4>Kimodo locomotion — dynamic motion</h4>
-            <p>On-robot validation of the Kimodo policy after sim-to-real tuning.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <video controls preload="metadata" playsinline>
-            <source src="videos/GROOTN1.7-realDelster.mp4" type="video/mp4">
-          </video>
-          <div class="caption">
-            <h4>GR00T N1.7 — real deployment</h4>
-            <p>GR00T N1.7 finetuned on 80 teleop demonstrations and deployed on the G1.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <video controls preload="metadata" playsinline>
-            <source src="videos/capx_pick_place.mp4" type="video/mp4">
-          </video>
-          <div class="caption">
-            <h4>cap-x · pick-and-place</h4>
-            <p>Whole-body manipulation behaviour deployed on the G1.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <video controls preload="metadata" playsinline>
-            <source src="videos/cap_x_pick_place_items_mujoco.mp4" type="video/mp4">
-          </video>
-          <div class="caption">
-            <h4>cap-x · MuJoCo</h4>
-            <p>Pick-and-place rollouts in simulation prior to real deployment.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <video controls preload="metadata" playsinline>
-            <source src="videos/LLM_Spanwer_isaaac_FF_updated.mp4" type="video/mp4">
-          </video>
-          <div class="caption">
-            <h4>LLM-driven scene spawner</h4>
-            <p>Natural-language scene generation inside Isaac Sim for humanoid testing.</p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <video controls preload="metadata" playsinline>
             <source src="videos/prompt_to_scene_generation.mp4" type="video/mp4">
           </video>
           <div class="caption">
@@ -124,11 +74,11 @@
 
         <article class="video-card">
           <video controls preload="metadata" playsinline>
-            <source src="videos/First_onsite.mp4" type="video/mp4">
+            <source src="videos/LLM_Spanwer_isaaac_FF_updated.mp4" type="video/mp4">
           </video>
           <div class="caption">
-            <h4>First on-site day</h4>
-            <p>Hardware assembly and initial bring-up in Brussels.</p>
+            <h4>LLM-driven scene spawner</h4>
+            <p>Natural-language scene generation inside Isaac Sim for humanoid testing.</p>
           </div>
         </article>
 
@@ -151,6 +101,67 @@
             <p>Side-by-side comparison of the GRAIL and AIM motion-reconstruction pipelines.</p>
             <p><strong>GRAIL</strong> — smoother robot motion: ~2× lower jerk, half the peak joint velocity (3.7 vs 7.6 rad/s).</p>
             <p><strong>AIM</strong> — more accurate recovery: WA-MPJPE 71 vs 111 mm on EMDB-2 (36% lower error) · ~2× faster per clip.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/cap_x_pick_place_items_mujoco.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>cap-x · MuJoCo</h4>
+            <p>Pick-and-place rollouts in simulation prior to real deployment.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/capx_pick_place.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>cap-x · pick-and-place</h4>
+            <p>Whole-body manipulation behaviour deployed on the G1.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/RL_G1_flat_rough_terrain.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>RL locomotion — flat &amp; rough terrain</h4>
+            <p>PPO policies for the 29-DoF G1, trained entirely in simulation (MuJoCo Playground + MJX / Brax, 200M steps on a single A4000).</p>
+            <p>Rough terrain adds domain randomization — same pipeline and hyperparameters, one flag flip.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/kimodo_salsa.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Kimodo locomotion — dynamic motion</h4>
+            <p>On-robot validation of the Kimodo policy after sim-to-real tuning.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/GROOTN1.7-realDelster.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>GR00T N1.7 — real deployment</h4>
+            <p>GR00T N1.7 finetuned on 80 teleop demonstrations and deployed on the G1.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/First_onsite.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>First on-site day</h4>
+            <p>Hardware assembly and initial bring-up in Brussels.</p>
           </div>
         </article>
       </div>
@@ -180,6 +191,10 @@
         <figure>
           <img src="images/grail-recon-pipeline.png" alt="GRAIL motion reconstruction pipeline">
           <figcaption>GRAIL reconstruction pipeline · click to enlarge</figcaption>
+        </figure>
+        <figure>
+          <img src="images/G1_RL_workflow.png" alt="G1 RL locomotion training workflow: robot model, MDP environment, domain randomization, vectorized MJX simulation, PPO training, evaluation and checkpointing, deployed policy">
+          <figcaption>G1 RL locomotion workflow · click to enlarge</figcaption>
         </figure>
       </div>
 
