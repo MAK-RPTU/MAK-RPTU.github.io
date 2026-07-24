@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pasta Shape Classification — Khan, Meeran Ali</title>
+  <meta name="description" content="Transfer-learning-based real-time pasta-shape classifier for food-industry quality control, sorting, and inventory management.">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site">
+      <a class="back-link" href="../../">Back to projects</a>
+      <div class="project-header">
+        <h1>Pasta Shape Classification</h1>
+        <p class="lede">
+          AI-driven pasta-shape classifier for the food industry — quality
+          control, sorting, packaging, and inventory management — running
+          real-time on a live camera feed. Transfer learning compensates for a
+          deliberately small hand-collected dataset (56 / 7 / 7 train / val /
+          test).
+        </p>
+        <div class="tags">
+          <span class="tag">Computer vision</span>
+          <span class="tag">Transfer learning</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Real-time inference</span>
+          <span class="tag">Quality control</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="section-title">Highlights</h2>
+      <ul class="highlights">
+        <li>Classifies multiple pasta types from a live camera feed to support automated quality control, sorting, packaging, and inventory management in food-industry workflows.</li>
+        <li>Transfer learning over a hand-collected dataset (56 training / 7 validation / 7 test samples) — 70% top-1 on the held-out test set despite the deliberately small data budget.</li>
+        <li>Training reached ≈78% train and ≈95% validation accuracy (train / val loss ≈ 0.7 / 0.2), demonstrating that a targeted fine-tuning strategy transfers well to small industrial datasets.</li>
+        <li>Deployed as a real-time inference loop against a mounted camera rig, so the same model that trained on stills also runs on the live sorting line.</li>
+      </ul>
+
+      <h2 class="section-title">Recordings</h2>
+      <div class="video-grid">
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/Pasta_shape_classification_pipeline.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="caption">
+            <h4>Pipeline walkthrough</h4>
+            <p>End-to-end pipeline: data capture, transfer-learning training, and real-time inference.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/Pasta_classification_demonstration.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="caption">
+            <h4>Live demonstration</h4>
+            <p>Live camera feed classified frame-by-frame at inference time.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="section-title">Photos</h2>
+      <div class="flowchart-row">
+        <img src="images/overview.png" alt="System overview: camera input to classifier to shape label">
+      </div>
+      <div style="text-align: center; margin-bottom: 16px;">
+        <img src="images/data_capture_rig.jpg" alt="Physical data-capture rig used to collect pasta training samples" style="max-height: 380px; max-width: 100%; width: auto; border-radius: var(--radius); border: 1px solid var(--border); display: inline-block;">
+      </div>
+      <div class="flowchart-row">
+        <img src="images/network_architecture.png" alt="Network architecture used for pasta-shape classification">
+      </div>
+      <div class="photo-row">
+        <img src="images/Train_validation_accuracy.png" alt="Training and validation accuracy over epochs">
+        <img src="images/Train_validation_loss.png" alt="Training and validation loss over epochs">
+      </div>
+    </main>
+
+    <footer class="site">
+      © <span id="year"></span> Khan, Meeran Ali
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="../../assets/lightbox.js"></script>
+</body>
+</html>

@@ -418,6 +418,24 @@ ul.highlights li::before {
   margin-bottom: 16px;
 }
 
+.photo-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+  justify-items: center;
+}
+
+.photo-row img {
+  width: auto;
+  max-width: 100%;
+  max-height: 320px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+}
+
 .flowchart-row {
   margin-bottom: 56px;
 }
@@ -540,6 +558,9 @@ footer.site {
     font-size: 1.8rem;
   }
   .pipeline-row {
+    grid-template-columns: 1fr;
+  }
+  .photo-row {
     grid-template-columns: 1fr;
   }
 }
