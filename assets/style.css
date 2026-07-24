@@ -236,6 +236,14 @@ h2.section-title {
   background: #000;
 }
 
+.video-card iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #000;
+}
+
 .video-card .caption {
   padding: 16px 20px 20px;
 }
