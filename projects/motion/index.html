@@ -126,6 +126,16 @@
 
         <article class="video-card">
           <video controls preload="metadata" playsinline>
+            <source src="videos/Egocentric_Annotation_Validation.mp4" type="video/mp4">
+          </video>
+          <div class="caption">
+            <h4>Egocentric annotation — retarget validation</h4>
+            <p>Egocentric video annotated into robot-ready wrist / hand trajectories, retargeted to the G1 (29-DoF + Inspire hands) in MuJoCo — visual sanity check before spending GPU-days on VLA training.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
             <source src="videos/GROOTN1.7-realDelster.mp4" type="video/mp4">
           </video>
           <div class="caption">
@@ -174,6 +184,10 @@
         <figure>
           <img src="images/G1_RL_workflow.png" alt="G1 RL locomotion training workflow: robot model, MDP environment, domain randomization, vectorized MJX simulation, PPO training, evaluation and checkpointing, deployed policy">
           <figcaption>G1 RL locomotion workflow · click to enlarge</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ego_annotation_pipeline_flowchart.svg" alt="Egocentric annotation pipeline: rig capture, ingest QC, SLAM odometry, 3D hands, transform composition, object detection, segmentation, semantic labeling, delta-action export, and retarget verification gate">
+          <figcaption>Egocentric annotation pipeline · click to enlarge</figcaption>
         </figure>
       </div>
 
