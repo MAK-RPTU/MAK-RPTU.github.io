@@ -136,6 +136,16 @@
 
         <article class="video-card">
           <video controls preload="metadata" playsinline>
+            <source src="videos/Ego_pipeline_AgibotG2_omnihands.webm" type="video/webm">
+          </video>
+          <div class="caption">
+            <h4>Egocentric pipeline — Agibot G2 retargeting</h4>
+            <p>Same egocentric annotation pipeline, re-targeted to the Agibot G2 embodiment with omni-hands — showing the pipeline generalizes across humanoid platforms without changes to the annotation or export stages.</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <video controls preload="metadata" playsinline>
             <source src="videos/GROOTN1.7-realDelster.mp4" type="video/mp4">
           </video>
           <div class="caption">
@@ -170,24 +180,28 @@
         <img src="images/pipeline_flowchart.svg" alt="End-to-end commissioning pipeline flowchart">
       </div>
       <div class="flowchart-row">
-        <img src="images/prompt_scene_generation_pipeline.svg" alt="Prompt-to-scene generation pipeline">
+        <img src="images/prompt_scene_gen.png" alt="Prompt-to-scene generation pipeline">
       </div>
       <div class="pipeline-row">
         <figure>
-          <img src="images/aim-video2robot-pipeline.png" alt="AIM video-to-robot motion reconstruction pipeline">
+          <img src="images/AIM_video2robot.png" alt="AIM video-to-robot motion reconstruction pipeline">
           <figcaption>AIM video-to-robot pipeline · click to enlarge</figcaption>
         </figure>
         <figure>
-          <img src="images/grail-recon-pipeline.png" alt="GRAIL motion reconstruction pipeline">
+          <img src="images/GRAIL_video2robot.png" alt="GRAIL motion reconstruction pipeline">
           <figcaption>GRAIL reconstruction pipeline · click to enlarge</figcaption>
         </figure>
         <figure>
-          <img src="images/G1_RL_workflow.png" alt="G1 RL locomotion training workflow: robot model, MDP environment, domain randomization, vectorized MJX simulation, PPO training, evaluation and checkpointing, deployed policy">
+          <img src="images/G1_ReinforcementLearning.png" alt="G1 RL locomotion training workflow: robot model, MDP environment, domain randomization, vectorized MJX simulation, PPO training, evaluation and checkpointing, deployed policy">
           <figcaption>G1 RL locomotion workflow · click to enlarge</figcaption>
         </figure>
         <figure>
           <img src="images/ego_annotation_pipeline_flowchart.svg" alt="Egocentric annotation pipeline: rig capture, ingest QC, SLAM odometry, 3D hands, transform composition, object detection, segmentation, semantic labeling, delta-action export, and retarget verification gate">
           <figcaption>Egocentric annotation pipeline · click to enlarge</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Ego_VLA_pipeline.png" alt="Ego VLA training pipeline: egocentric video ingestion, annotation, retargeting, and vision-language-action policy training">
+          <figcaption>Ego VLA training pipeline · click to enlarge</figcaption>
         </figure>
       </div>
 
